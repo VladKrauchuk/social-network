@@ -4,3 +4,19 @@
     border-radius: 50%;
     object-fit: cover;
 }
+
+.pagination{
+    margin: 15px;
+}
+.pagination span {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    margin-right: 10px;
+    color: #cccccc;
+}
+
+.pagination span.selectedPage {
+    color: #ffffff;
+    background-color: #cccccc;
+}
