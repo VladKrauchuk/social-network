@@ -29,14 +29,10 @@ class ProfileStatus extends Component {
                 status: this.props.status
             });
         }
-
-        console.log("componentDidUpdate")
     }
 
 
     render() {
-        console.log("render");
-
         return (
             <div>
                 {!this.state.editMode
