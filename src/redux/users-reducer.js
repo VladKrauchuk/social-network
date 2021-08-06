@@ -81,8 +81,7 @@ export const requestUsers = (page, pageSize) => async (dispatch) => {
 
     dispatch(toggleIsFetching(false));
     dispatch(setUsers(data.items));
-    dispatch(setTotalUsersCount(200));
-    // TODO: this.props.setTotalUsersCount(response.data.totalCount);
+    dispatch(setTotalUsersCount(data.totalCount));
 }
 
 const followUnfollowFlow = async (dispatch, userId, apiMethod, actionCreator) => {
