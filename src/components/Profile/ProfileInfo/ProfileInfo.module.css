@@ -1,3 +1,7 @@
+.profileInfo {
+    padding: 15px;
+}
+
 .cover img {
     width: 100%;
     height: 300px;
@@ -7,4 +11,12 @@
 
 .mainPhoto {
     width: 200px;
+}
+
+.profileData {
+    margin-top: 15px;
+}
+
+.contact {
+    padding-left: 10px;
 }
