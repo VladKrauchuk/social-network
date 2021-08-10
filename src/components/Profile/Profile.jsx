@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./Profile.module.css";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import MyPostsContainer from "./MyPosts/MyPostsContainer";
+import {UserType} from "../../types/types";
+
 
 const Profile = (props) => {
     return (
