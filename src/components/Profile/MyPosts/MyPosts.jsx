@@ -2,10 +2,10 @@ import React, {memo} from "react";
 import styles from "./MyPosts.module.css";
 import Post from "./Post/Post";
 import {Field, reduxForm} from "redux-form";
-import {maxLength, required} from "../../../utils/validators/validators";
+import {maxLengthCreator, required} from "../../../utils/validators/validators";
 import {Textarea} from "../../common/FormsControls/FormsControls";
 
-const maxLength30 = maxLength(30);
+const maxLength30 = maxLengthCreator(30);
 
 const MyPosts = memo((props) => {
     const postsElements = [...props.posts].reverse()

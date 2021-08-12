@@ -4,9 +4,9 @@ import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 import {Field, reduxForm} from "redux-form";
 import {Textarea} from "../common/FormsControls/FormsControls";
-import {maxLength, required} from "../../utils/validators/validators";
+import {maxLengthCreator, required} from "../../utils/validators/validators";
 
-const maxLength50 = maxLength(50);
+const maxLength50 = maxLengthCreator(50);
 
 const Dialogs = (props) => {
     let dialogsElements = props.dialogs.map(dialog => <DialogItem name={dialog.name} id={dialog.id} key={dialog.id}/>);
